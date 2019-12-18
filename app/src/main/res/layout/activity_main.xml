@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F8F8"
     tools:context=".MainActivity">
 
     <View
@@ -17,12 +18,12 @@
         android:id="@+id/txt_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
-        android:fontFamily="@font/nunito_semibold"
+        android:fontFamily="@font/nunito_bold"
         android:text="@string/hi_george"
         android:textColor="@android:color/white"
-        android:textSize="28sp"
+        android:textSize="26sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,12 +31,58 @@
         android:id="@+id/txt_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:alpha="0.7"
         android:fontFamily="@font/nunito_semibold"
         android:text="@string/hint_main"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:alpha="0.7"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@id/txt_name"
         app:layout_constraintTop_toBottomOf="@id/txt_name" />
+
+    <ImageView
+        android:id="@+id/img_notification"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/background_circle"
+        android:contentDescription="@string/app_name"
+        android:padding="8dp"
+        android:src="@drawable/ic_notification_white_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_location"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_rounded"
+        android:drawableStart="@drawable/ic_search_white_30dp"
+        android:drawableEnd="@drawable/ic_mic_white_30dp"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:hint="@string/location"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/serang_banten"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@id/img_notification"
+        app:layout_constraintStart_toStartOf="@id/txt_hint"
+        app:layout_constraintTop_toBottomOf="@id/txt_hint" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_freelancer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        tools:listitem="@layout/item_freelancer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edt_location"
+        app:layout_constraintStart_toStartOf="@id/edt_location"
+        app:layout_constraintTop_toBottomOf="@id/edt_location" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

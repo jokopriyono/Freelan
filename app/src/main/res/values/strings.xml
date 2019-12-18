@@ -2,4 +2,10 @@
     <string name="app_name">Freelan</string>
     <string name="hi_george">HI, George</string>
     <string name="hint_main">Search and find freelancer</string>
+    <string name="serang_banten">Serang, Banten</string>
+    <string name="location">Location</string>
+    <string name="me">Joko Priyono</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="jobs">123 jobs</string>
+    <string name="rating">4.9</string>
 </resources>
