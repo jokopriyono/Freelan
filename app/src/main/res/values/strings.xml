@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Freelan</string>
+    <string name="hi_george">HI, George</string>
+    <string name="hint_main">Search and find freelancer</string>
+</resources>
