@@ -9,4 +9,9 @@
         <item name="windowActionBar">false</item>
     </style>
 
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
 </resources>

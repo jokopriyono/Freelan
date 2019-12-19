@@ -8,4 +8,13 @@
     <string name="android_developer">Android Developer</string>
     <string name="jobs">123 jobs</string>
     <string name="rating">4.9</string>
+    <string name="specialist">Specialist</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="adobe_xd">Adobe XD</string>
+    <string name="API">API</string>
+    <string name="photoshop">Photoshop</string>
+    <string name="marvel">Marvel App</string>
+    <string name="locations">Locations</string>
+    <string name="address">Merdeka Barat Street, number 88, Block C, Kopo - Serang</string>
+    <string name="hire_me">Hire Me</string>
 </resources>
